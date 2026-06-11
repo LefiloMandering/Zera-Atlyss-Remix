@@ -1,0 +1,54 @@
+# ===== Metadata ===== #
+%id          Zera_Remixed_Music
+%displayname Zera Remixed Music
+# ===== Metadata ===== #
+
+# ===== Field Music ===== #
+_mu_flyby = MainMenu
+_mu_selee = CharacterSelect
+option    = Options
+modaudio_atlyss_map_sanctum_day           = SanctumDay1 | SanctumDay2 ~ fl : true
+modaudio_atlyss_map_sanctum_night         = SanctumNight              ~ fl : true
+modaudio_atlyss_map_sanctumarena_null     = TuulValley1 ~ fl : true
+modaudio_atlyss_map_executionerstomb_null = Hell02
+modaudio_atlyss_map_effoldterrace_day     = TerraceDay
+modaudio_atlyss_map_effoldterrace_night   = TerraceNight
+modaudio_atlyss_map_effoldterrace_null    = ___disable___
+modaudio_atlyss_map_tuulvalley_null       = TuulValley2
+modaudio_atlyss_map_tuulenclave_null      = Clave
+modaudio_atlyss_map_crescentkeep_day      = Laid
+modaudio_atlyss_map_wallofthestars_null   = Poons2 ~ fl : true
+modaudio_atlyss_map_trialofthestars_day   = Calp
+# ===== Field Music ===== #
+
+# ===== Action Music ===== #
+_mu_wonton5   = GroveAction      
+_mu_cahoots   = Diva      ~ fl : true
+_mu_wasp      = Geistlords
+_mu_ecka      = Colossus
+_mu_wonton    = Valdur
+_mu_hermit    = Galius
+music_whisper = Poons1    ~ map : Sanctum Catacombs
+music_whisper = Photobeat ~ map : Crescent Grove
+# ===== Action Music ===== #
+
+# ===== Scripts ===== #
+_mu_discover02                                         \
+  = | Discover02 : 1.0 : 1.0 : 1.0 : Arcwood_Pass      \
+    | Church     : 1.0 : 1.0 : 1.0 : Church            \
+    | Catacombs  : 1.0 : 1.0 : 1.0 : Sanctum_Catacombs \
+  ~ | tg_lua     : target_group_ArcwoodPass            \
+    | fl         : true                                \
+    | tg_dyn     : true                                \
+    | tg_smooth  : true                                \
+	  | tg_cont    : true                                \
+    | chain      : false
+
+_atlyssSet_catacomb_action5                       \
+  = | CatacombsAction1 : 1.0 : 1.0 : 1.0 : Easy   \
+    | CatacombsAction1 : 1.0 : 1.0 : 1.0 : Normal \
+    | CatacombsAction2 : 1.0 : 1.0 : 1.0 : Hard   \
+  ~ | tg_lua : target_group_Difficulty            \
+    | tg_dyn : true                               \
+    | chain  : false
+# ===== Scripts ===== #

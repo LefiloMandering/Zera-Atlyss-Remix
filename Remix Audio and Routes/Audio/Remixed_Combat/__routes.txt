@@ -1,0 +1,11 @@
+# ===== Metadata ===== #
+%id           Zera_Remixed_Combat
+%displayname  Zera Remixed Combat
+%updatescript pack_update
+%enabledbydefault false
+%customclipvolume Textile = 1.0
+# ===== Metadata ===== #
+
+# ===== Music ===== #
+modaudio_atlyss_map_outersanctum_action | modaudio_atlyss_map_arcwoodpass_action | modaudio_atlyss_map_tuulvalley_action | modaudio_atlyss_map_tuulenclave_action | modaudio_atlyss_map_crescentroad_action | modaudio_atlyss_map_luvoragarden_action = Textile
+# ===== Music ===== #
